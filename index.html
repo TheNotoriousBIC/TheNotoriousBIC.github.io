@@ -1,0 +1,203 @@
+<!DOCTYPE HTML>
+<!--
+	Spectral by Pixelarity
+	pixelarity.com | hello@pixelarity.com
+	License: pixelarity.com/license
+-->
+<html>
+	<head>
+		<title>TheNotoriousBIC - Home</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<script src="assets/js/jquery-3.1.1.min.js"></script>
+		<script src="assets/js/twitch.min.js"></script>
+		<script src="http://player.twitch.tv/js/embed/v1.js"></script>
+		<script src="assets/js/twitch.js"></script>
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+	</head>
+	<body class="landing">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header" class="alt">
+						<h1><a href="index.html">The Notorious BIC</a></h1>
+						<nav id="nav">
+							<ul>
+								<li class="special">
+									<a href="#menu" class="menuToggle"><span>Menu</span></a>
+									<div id="menu">
+										<ul>
+											<li><a href="index.html">Home</a></li>
+											<li><a href="about.html">COMING SOON</a></li>
+											<li><a href="contact.html">COMING SOON</a></li>
+											<li><a href="#">COMING SOON</a></li>
+											<li><a href="contact.html">CONTACT</a></li>
+										</ul>
+									</div>
+								</li>
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Banner -->
+					<section id="banner" data-video="images/kingsRow">
+						<div class="inner">
+							<h2>The Notorious BIC</h2>
+							<p>Broadcaster<br />
+							Content Creator<br />
+							Mediocre Gamer</p>
+							<ul class="actions">
+								<li><a href="https://twitch.tv/thenotoriousbic" class="button special">Bic's Twitch Channel</a></li>
+							</ul>
+						</div>
+						<a href="#one" class="more scrolly">Learn More</a>
+						<video autoplay loop>
+							<source src="images/kingsRow.mp4">
+						</video>
+					</section>
+
+				<!-- One -->
+					<section id="one" class="wrapper style1 special">
+						<div class="inner">
+							<header class="major">
+								<h2>Hi, I'm The Notorious BIC!<br />
+								I play video games on the internet!</h2>
+								<p>I broadcast gameplay on Twitch for a live audience,<br />
+								and create gaming content videos on YouTube!</p>
+							</header>
+							<ul class="icons major">
+								<li><span class="icon fa-twitch major" style="color: #6441A5"><span class="label">Lorem</span></span></li>
+								<li><span class="icon fa-gamepad major" style='color: #CFD0D0'><span class="label">Ipsum</span></span></li>
+								<li><span class="icon fa-youtube-play major" style="color: #cd201f"><span class="label">Dolor</span></span></li>
+							</ul>
+						</div>
+					</section>
+
+				<!-- Two -->
+					<section id="two" class="wrapper alt style2">
+						<section class="spotlight">
+							<div class="image"><div class="videoPlayer"><iframe src="https://player.twitch.tv/?channel=thenotoriousbic" scrollable="no"></iframe></div></div><div class="content">
+								<h2>My Twitch Channel<br />
+								<span id="bicText">Currently Offline</span></h2>
+								<p id="offline">I am not currently streaming, but you can still check out my channel and watch my previous streams!<br />
+									<br />
+								You can find my streaming schedule further down the page!</p>
+							</div>
+						</section>
+						<section class="spotlight">
+							<div class="image"><div class="videoPlayer"><iframe src="https://www.youtube.com/embed/n6VuRA0kFiY" allowfullscreen></iframe></div></div><div class="content">
+								<h2>My YouTube Channel<br />
+								<span style="color: #cd201f">Most Recent Video:</span></h2>
+								<p>A Discussion about Blizzard's Reveal of the newest Overwatch Hero, Sombra!</p>
+							</div>
+						</section>
+						<section class="spotlight">
+							<div class="image"><div id='calendar'></div></div><div class="content">
+								<h2>My Schedule</h2>
+								<p style="float: left; text-align: center;">Monday, Wednesday, Friday, Saturday<br />
+									11am - 6pm EST
+								</p>
+								<p style="float: right; text-align: center;">Tuesday, Thursday <br />
+									7pm - 12am EST
+								</p>
+							</div>
+						</section>
+					</section>
+
+				<!-- Three -->
+					<section id="three" class="wrapper style3 special">
+						<div class="inner">
+							<header class="major">
+								<h2>Worth Your Time!</h2>
+								<p>If you enjoy my broadcasts, be sure to check out the following broadcasters!<br />
+								Their game choice and style are similar to mine, and they are who I watch when I'm not live! <br/>
+								Just hover over an icon to get a live peek into their Twitch channel!</p>
+							</header>
+							<ul class="features">
+								<li class="broadcaster">
+									<iframe id="livePreview" style="position: absolute; height: 100%; width: 100%; display: none;" scrolling="no" allowfullscreen="" webkitallowfullscreen="" mozallowfullscreen="" hidden="" src=""></iframe>
+									<img src="images/catahstrophic.jpeg" class="broadcasterLogo" id="catahstrophic" />
+									<div class="streamerText">
+									<h3 id="catah">Catahstrophic</h3>
+									<p class="live" id="catahText">Incredibly Awesome <br />
+									Amazing Community Interaction!</p>
+								</div>
+								</li>
+								<li class="broadcaster">
+									<img src="images/glaceon.png" class="broadcasterLogo" id="thefrozenglaceon" />
+									<div class="streamerText">
+									<h3 id="frozen">TheFrozenGlaceon</h3>
+									<p class="live" id="frozenText">Sexy Accent.</p>
+								</div>
+								</li>
+								<li class="broadcaster">
+									<img src="images/goth.png" class="broadcasterLogo" id="kinggothalion" />
+									<div class="streamerText">
+									<h3 id="goth" style="text-align: center; margin: 0;">KingGothalion</h3>
+									<span class="streamInfo" id="gothText">My Favorite Partnered Broadcaster</span>
+								</div>
+								</li>
+								<li class="broadcaster">
+									<img src="images/timthetatman.jpeg" class="broadcasterLogo" id="timthetatman" />
+									<div class="streamerText">
+									<h3 id="tim">TimTheTatman</h3>
+									<p id="timTheTextman" style="text-align: center; margin: 0;">Good & Funny Overwatch Player<br />
+									Great Interaction with Community</p>
+								</div>
+								</li>
+								<li class="broadcaster">
+									<img src="images/moonmoon.png" class="broadcasterLogo" id="moonmoon_ow" />
+									<div class="streamerText">
+									<h3 id="moon">MOONMOON_OW</h3>
+									<p id="moonText">Overwatch Legend</p>
+								</div>
+								</li>
+								<li class="broadcaster">
+									<img src="images/kripp.png" class="broadcasterLogo" id="nl_kripp" />
+									<div class="streamerText">
+									<h3 id="kripp">nl_Kripp</h3>
+									<p id="krippText">Hilarious Hearthstone Player<br />
+									Great Chat if you love copypastas</p>
+								</div>
+								</li>
+							</ul>
+						</div>
+					</section>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<ul class="icons">
+							<li><a href="https://twitch.tv/thenotoriousbic" class="icon fa-twitch"><span class="label">Twitch</span></a></li>
+							<li><a href="https://www.youtube.com/channel/UCUheyDnic8AI8fjxZf3nG8g" class="icon fa-youtube-play"><span class="label">YouTube</span></a></li>
+							<li><a href="https://twitter.com/ItsNotoriousBIC" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="https://www.instagram.com/notorious.bic/" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="contact.html" class="icon fa-envelope-o fill-letter o"><span class="label">Contact</span></a></li>
+						</ul>
+						<ul class="copyright">
+							<li>&copy; The Notorious BIC 2016</li>
+						</ul>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+			<link rel='stylesheet' href='assets/css/fullcalendar.css' />
+			<script src='assets/js/moment.min.js'></script>
+			<script src='assets/js/fullcalendar.js'></script>
+			<script src='assets/js/gcal.js'></script>
+			<script src="assets/js/calendar.js"></script>
+
+	</body>
+</html>
