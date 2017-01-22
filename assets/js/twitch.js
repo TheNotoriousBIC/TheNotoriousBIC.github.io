@@ -64,7 +64,7 @@ $.ajax({
             },
             success: function(data) {
               $("#catah").css("color", "#00FF00")
-                $("#catahText").empty().append("<br><strong style='color: #00FF00; text-align: center; font-size: 48px; padding-top: -70%;'>LIVE NOW!</strong></br><br><strong style='color: #00FF00' id='playing'>Playing</strong> " + "<span style='color: #FFFFFF' id='game'>" + data.game + "</span>");
+                $("#catahText").empty().append("<strong style='color: #00FF00' id='playing'>Playing</strong> " + "<span style='color: #FFFFFF' id='game'>" + data.game + "</span>");
                 $.ajax({
                     type: 'GET',
                     url: 'https://api.twitch.tv/kraken/streams/catahstrophic',
