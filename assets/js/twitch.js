@@ -26,7 +26,7 @@ $.ajax({
             },
             success: function(data) {
                 $('#offline').empty();
-                $("#bicText").empty().append("<br>< strong style='color: #00FF00; font-size: 48px; padding-top: -70%;'>LIVE NOW!</strong></br><br><strong style='color: #26B5EB' id='playing'>Playing</strong> " + "<span style='color: #FFFFFF' id='game'>" + data.game + "</span>");
+                $("#bicText").empty().append("<strong style='color: #26B5EB' id='playing'>Playing</strong> " + "<span style='color: #FFFFFF' id='game'>" + data.game + "</span>");
                 $.ajax({
                     type: 'GET',
                     url: 'https://api.twitch.tv/kraken/streams/thenotoriousbic',
@@ -289,7 +289,7 @@ $(function () {
          } else if (this.id == "moonmoon_ow") {
              $("#livePreview").css("top", "200%");
              $("#livePreview").css("left", "0px");
-         } else if (this.id == "nl_kripp") {
+         } else if (this.id == "s2crim") {
              $("#livePreview").css("top", "200%");
              $("#livePreview").css("left", "100%");
          }
